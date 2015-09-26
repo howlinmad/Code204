@@ -21,15 +21,43 @@ html {
     height: 100%;
 }
 
-#container {    
-    margin: 20%;
-    font-family: 'Anton', sans-serif;
+#error-div {    
+    font-family: 'Anton', sans-serif;     
     font-size: 2em;
+    margin-top: 20%;
+}
+h1 {
+    font-size: 2em;   
 }
 
 #text { 
     width: 0px; 
     height: 2em; 
+    font-size: 1.7em;
     white-space: nowrap; 
-    overflow: hidden;  
+    overflow: hidden; 
+    font-family: 'Anton', sans-serif;
 }
+
+@media only screen and (max-width: 770px) {
+#error-div {
+    margin-left: 5%;
+    
+}
+#text {
+    margin-left: 5%;
+    font-size: 2.5em;
+}
+}
+
+@media only screen and (max-width: 380px) {
+
+
+#text {
+    margin-left: 5%;
+    font-size: 2em;
+    white-space: normal;
+    overflow: visible;
+}
+}
+

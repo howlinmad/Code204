@@ -1,22 +1,29 @@
 <!doctype html>
 
-<html>
+<html lang="en">
 <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">    
 <title>404 error page</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>    
 <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
 <link href="style.css" rel="stylesheet">    
 </head>
 <body>
-    <div id="container">
+    <div class="container">
+        <div class="row" id="error-div">
         <h1>Error 404</h1>
-        <div id="text">
+        </div>
+        <div class="row" id="text">
         <span>The page that you requested was not found.</span> 
         </div>
     </div>
     <script>
+        if($(window).width() > 380) {
         var spanWidth = $('#text span').width();
         $('#text').animate( { width: spanWidth }, 3000 );
+        }
     </script>
 </body>
 </html>
