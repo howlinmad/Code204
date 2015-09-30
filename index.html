@@ -1,0 +1,22 @@
+<!doctype html>
+
+<html>
+<head>
+<title>404 error page</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>    
+<link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+<link href="style.css" rel="stylesheet">    
+</head>
+<body>
+    <div id="container">
+        <h1>Error 404</h1>
+        <div id="text">
+        <span>The page that you requested was not found.</span> 
+        </div>
+    </div>
+    <script>
+        var spanWidth = $('#text span').width();
+        $('#text').animate( { width: spanWidth }, 3000 );
+    </script>
+</body>
+</html>

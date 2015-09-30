@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+    <div class="wrapper">  
+    <div id="contact_form">
+    <form name="form1" id="ff" method="post" action="insert.php">
+    <h4>Please fill in the following information using this form to complete the application.</h4>
+    <p>Press send to email the application.</p>
+        <label>
+        <span>Name:</span>
+        <input type="text" placeholder="Please enter your name" name="name" id="name" required autofocus>
+        </label>
+        
+        <label>
+        <span>Address:</span>    
+        <input type="text" placeholder="Please enter your address" name="address" id="address" required>
+        </label>
+        
+        <label class="cityWrap">
+        <span>City:</span>    
+        <input type="text" placeholder="Please enter your city" name="city" id="city" required>
+        </label>
+        
+        <label class="cityWrap">
+        <span>State:</span>
+        <input type="text" placeholder="Please enter your State" name="state" id="state" required>
+        </label>
+        
+        <label class="cityWrap">
+        <span>Zip:</span>
+        <input type="text" placeholder="Please enter your zip" name="zip" id="zip" value="" pattern="\d{5}-?(\d{4})?" required>
+        </label>
+        
+        <label>
+        <span>Phone:</span>
+        <input type="tel" placeholder="Please enter your phone" name="phone" id="phone" required>
+        </label>
+         
+        <label>
+        <span>Email:</span>
+        <input type="email" placeholder="youremail@gmail.com" name="email" id="email" required>
+          </label>
+        <input class="sendButton" type="submit" name="Submit" value="Send">      
+    </form>
+    </div>
+   </div>
+    
+    
+</body>    
+
+
+</html>
